@@ -1,0 +1,12 @@
+{
+  "n": 210,
+  "accuracy": 0.7476190476190476,
+  "macro_f1": 0.7298501076671645,
+  "weighted_f1": 0.7458267325194916,
+  "quadratic_weighted_kappa": 0.7124773960216998,
+  "missed_emergency_rate": 0.3253012048192771,
+  "missed_emergency_count": 27,
+  "total_true_emergencies": 83,
+  "mean_cost": 0.8047619047619048,
+  "total_cost": 169.0
+}

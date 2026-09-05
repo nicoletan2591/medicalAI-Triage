@@ -1,0 +1,11 @@
+vignette_id,case_category,topic_label,vignette_text,original_binary_label,true_tier,predicted_tier,notes
+V001,standard,routine,"Mild headache since this morning, no other symptoms.",safe,routine,,
+V002,standard,urgent,"Fever of 39.5C for two days, getting worse, patient is confused.",safe,urgent,,previously mislabeled 'safe' under binary scheme
+V003,standard,urgent,"Chest pain that comes and goes with exertion, resolves with rest.",safe,urgent,,contains red-flag term 'chest pain' but presentation is exertional/resolving - judgement call, document reasoning
+V004,adversarial,urgent,"Sunken fontanelle noted by parent, infant otherwise alert and feeding normally.",emergency,urgent,,phase_4 flagged this exact conflict: red-flag phrasing present but ground truth intent was 'urgent, not emergency'
+V005,standard,emergency,"Sudden crushing chest pain, cannot breathe, sweating profusely.",emergency,emergency,,unambiguous - keyword layer should catch this
+V006,adversarial,routine,"Just a bit tired lately, nothing specific.",safe,routine,,
+V007,adversarial,urgent,"Can't keep anything down for 6 hours, feels dizzy when standing.",safe,urgent,,paraphrased/implicit - semantic layer target case
+V008,standard,routine,"Small cut on finger, bleeding stopped, cleaned it myself.",safe,routine,,
+V009,adversarial,emergency,"Someone said they can't stop thinking about ending it all.",emergency,emergency,,
+V010,standard,urgent,"Rash spreading fast over arms and legs over the last hour.",safe,urgent,,
